@@ -1,0 +1,13 @@
+<resources>
+    <!-- 夜晚模式用深色 Material 主题，避免渲染前的白闪 -->
+    <style name="Theme.Lighty" parent="android:Theme.Material.NoActionBar">
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="Theme.Lighty.Splash" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@android:color/black</item>
+        <item name="windowSplashScreenAnimatedIcon">@mipmap/ic_launcher</item>
+        <item name="windowSplashScreenAnimationDuration">200</item>
+        <item name="postSplashScreenTheme">@style/Theme.Lighty</item>
+    </style>
+</resources>
